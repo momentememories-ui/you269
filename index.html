@@ -6,16 +6,22 @@
     <title>Happy Anniversary💗</title>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;600&display=swap" rel="stylesheet">
     <style>
-        body {
+        /* ล็อกหน้าจอและพื้นหลังให้อยู่นิ่งสนิท ห้ามเลื่อน/ขยับเด็ดขาด */
+        html, body {
             margin: 0; padding: 0;
+            width: 100vw; height: 100vh;
+            overflow: hidden;
+            position: fixed;
+            top: 0; left: 0;
+            touch-action: none;
+            user-select: none;
+        }
+
+        body {
             background: url('photo11.jpg') no-repeat center center fixed;
             background-size: cover;
             font-family: 'Prompt', sans-serif;
             display: flex; flex-direction: column; justify-content: center; align-items: center;
-            height: 100vh; overflow: hidden;
-            touch-action: manipulation;
-            user-select: none;
-            position: relative;
         }
 
         .butterfly {
@@ -314,8 +320,8 @@
 
             const positions = [
                 {x: -110, y: -140}, {x: 0, y: -150}, {x: 110, y: -140},
-                {x: -120, y: -50},                    {x: 120, y: -50}, 
-                {x: -120, y: 40},                     {x: 120, y: 40},  
+                {x: -120, y: -50},                     {x: 120, y: -50}, 
+                {x: -120, y: 40},                      {x: 120, y: 40},  
                 {x: -110, y: 130},  {x: 0, y: 150},  {x: 110, y: 130}, 
                 {x: 0, y: -40}                                     
             ];
